@@ -1,0 +1,82 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #baffc2;
+    border-radius: 10px; 
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .input input[type="number"], 
+    .input select.operator,   
+    input[type="button"],
+    .result 
+ {
+  border: 0.5px dashed #ff0000;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+  .input input[type="number"] {
+    width: 40%;
+    padding: 4px 8px;
+    margin: 0 -10px;
+    color: #ff0000;
+    background-color: #baffc2;
+    text-align: left; 
+    outline: none; 
+  }
+  
+  .input select.operator {
+    padding:  4px 15px 4px 4px;
+    margin: 0 20px;
+    background-color: #baffc2;
+    cursor: pointer;
+    color: #ff0000;
+    outline: none; 
+    text-align: left;
+  }
+  
+  input[type="button"] {
+    background-color: #baffc2;
+    color: #fe0302;
+    padding: 4px 15px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .result {
+    margin-top: 15px;
+    background-color: #baffc9;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .result p {
+    margin: 7px 0;
+    font-size: 18px;
+  }
+  
+  .result .old_resul {
+    color: #d98a68;
+  }
+  
+  .result .now_result {
+    color: #ff0000;
+  }
