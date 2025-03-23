@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         result = num1 - num2;
         break;
       case '/':
-        if (num2 === 0) {
+        if (Math.abs(num2) < Number.EPSILON) {
           nowResultParagraph.textContent = 'Ошибка: Деление на ноль!';
           return;
         }
